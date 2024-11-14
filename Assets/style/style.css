@@ -206,6 +206,7 @@ body {
   background-image: url(../images/certificado-grunge-marco-ornamental-vintage_1048-11681.avif);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
   .container-categories {
@@ -511,4 +512,66 @@ header {
 }
 
 
+/* Ajustes generales del nav para dispositivos móviles */
+@media (max-width: 767px) {
+  nav {
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
 
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .navbar-toggler {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .collapse.navbar-collapse {
+    display: none; 
+  }
+
+  .collapse.navbar-collapse.show {
+    display: block; 
+  }
+
+  .navbar-nav .nav-item {
+    padding: 10px;
+  }
+}
+
+/* Ajustes de títulos en pantallas pequeñas */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 6vw;
+    line-height: 1.1; 
+  }
+
+  .header-section h1 {
+    font-size: 8vw;
+    width: 90vw; 
+    left: 5%; 
+    bottom: 30px;
+  }
+}
+
+/* Ajustes en pantallas medianas */
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 4rem; 
+  }
+
+  .header-section h1 {
+    font-size: 5rem;
+    width: 80vw;
+  }
+}
