@@ -425,7 +425,7 @@ body {
   display: flex;
   align-items: center;                     
   padding: 20px;
-  background-image: url(/Assets/images/universo-tai2.jpeg);
+  background-image: url(../images/universo-tai2.jpeg);
   background-repeat: no-repeat;
   background-position:inherit; 
   background-size: cover;
