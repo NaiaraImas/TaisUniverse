@@ -225,7 +225,23 @@ body {
     gap: 2rem;
     overflow: hidden;
   }
+
+  .content-wrapper2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 20px;
+  }
   
+  /* .container-categories2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+  } */
+
   .category-Dados {
     background-image: linear-gradient(#00000080, #00000080),
       url(../images/matron_ravens_dice_product_img_0004_5.webp);
@@ -254,6 +270,316 @@ body {
     background-repeat: no-repeat;
     overflow: hidden;
     transition: transform .5s ease;
+  }
+
+  .category-DadosM{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/matron_ravens_dice_product_img_0004_5.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+  }
+
+  .category-DadosMS{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/matron_ravens_dice_product_img_0004_5.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .category-DadosV{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/DadosVax.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+  }
+
+  .category-DadosVS{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/DadosVax.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .category-DadosL{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/Dados\ Laudna.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+  }
+
+  .category-DadosLS{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/Dados\ Laudna.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+    height: 25rem;
+    width: 25rem;
+  }
+
+
+  .category-DadosG{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/Green\ dices.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+  }
+
+  .category-DadosGS{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/Green\ dices.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .category-DadosE{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/Elite.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+  }
+
+  .category-DadosES{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/Elite.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .category-LibrosM{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/master.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+  }
+
+  .category-LibrosMS{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/master.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+    height: 25rem;
+    width: 25rem;
+  }
+
+
+  .category-LibrosP{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/jugador.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+  }
+
+  .category-LibrosPS{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/jugador.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .category-LibrosMo{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/monstruos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+  }
+
+  .category-LibrosMoS{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/monstruos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .category-LibrosC1{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/combo-dungeons-and-dragons-5ta-edicion11-8499964a6efbab61f616348602942343-1024-1024.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+  }
+
+  .category-LibrosC1S{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/combo-dungeons-and-dragons-5ta-edicion11-8499964a6efbab61f616348602942343-1024-1024.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .category-LibrosC2{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/combo\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+  }
+
+  .category-LibrosC2S{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/combo\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .category-PM1{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/accesorios1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+  }
+
+  .category-PM1S{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/accesorios1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .category-PM2{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/accesorios2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+  }
+
+  .category-PM2S{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/accesorios2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .category-ComboV{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/accesorios3combo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+  }
+
+  .category-ComboVS{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/accesorios3combo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .category-ComboFPF{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/accesorios4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+  }
+
+  .category-ComboFPFS{
+    background-image: linear-gradient(#00000080, #00000080),
+      url(../images/accesorios4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+    height: 25rem;
+    width: 25rem;
   }
 
   .footer {
@@ -511,6 +837,251 @@ header {
   }
 }
 
+.login-box {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  width: 400px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  /* height: 100vh;  */
+}
+
+/* Estilo para el contenedor principal que centra el contenido */
+.formularios {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  padding: 20px; 
+  box-sizing: border-box;
+}
+
+/* Fondo negro con transparencia */
+.atencion-cliente,
+.form-contacto {
+  background: rgba(0, 0, 0, 0.8); 
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  color: white; 
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Estilo de los campos de entrada */
+.input, .input01 {
+  background: #ffffff; 
+  color: #000; 
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+/* Efecto hover y focus en los campos */
+.input:focus, .input01:focus {
+  background: #e0e0e0;
+  border-bottom: 2px solid #939999;
+}
+
+/* Para el texto de los campos (label) */
+label span {
+  color: #9da3a3;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Botón de submit con efecto */
+.fancy {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #abb1b1;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+  border: none;
+}
+
+/* Efecto hover del botón */
+.fancy:hover {
+  background-color: #596e6e;
+  color: white;
+}
+
+/* Efectos visuales en el botón */
+.fancy .top-key,
+.fancy .bottom-key-1,
+.fancy .bottom-key-2 {
+  position: absolute;
+  display: block;
+}
+
+/* Ajuste del textarea */
+.input01 {
+  resize: none;
+}
+
+
+/* Estilos de las casillas de entrada */
+.user-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input2 {
+  background: #ffffff; 
+  color: #000; 
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input2:focus {
+  background: #e0e0e0; 
+  border-bottom: 2px solid #939999; 
+}
+
+.input2:focus + label,
+.input2:not(:placeholder-shown) + label {
+  top: -20px;
+  left: 5px;
+  color: #9da3a3;
+  font-size: 12px;
+}
+
+/* Botón para registrar */
+.text-center {
+  text-align: center;
+}
+
+#registerButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #abb1b1; 
+  color: #000; 
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+#registerButton:hover {
+  background-color: #596e6e; 
+  color: white;
+}
+
+#registerButton span {
+  position: absolute;
+  display: block;
+}
+
+#registerButton span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #b4bbbb);
+  animation: animate1 1s linear infinite;
+}
+
+#registerButton span:nth-child(2) {
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #b3b9b9);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+#registerButton span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #4a4b4b);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+#registerButton span:nth-child(4) {
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #909494);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+
 
 /* Ajustes generales del nav para dispositivos móviles */
 @media (max-width: 767px) {
@@ -575,3 +1146,4 @@ header {
     width: 80vw;
   }
 }
+
