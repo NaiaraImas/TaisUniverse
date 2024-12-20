@@ -32,7 +32,7 @@
                     <a class="nav-link" href="ayuda.html">Contactanos</a>
                 </li>
                 <div v-if="isLoggedIn">
-                    <button class="buttonSession">
+                    <button id="sessionButton" class="buttonSession">
                         <a href="ingresar.html" @click.prevent="logout" class="logIn">REGISTRARSE</a>
                     </button>
                 </div>
@@ -57,10 +57,7 @@
                         <input placeholder="Contraseña" class="input2" type="password" id="passwordRegister" required>
                     </div>
                     <div class="text-center">
-                        <a href="../../index.html" id="registerButton">
-                            Crear Cuenta
-                            <span></span>
-                        </a>
+                            <button type="submit" id="registerButton">Crear Cuenta</button>
                     </div>
                 </form>
             </div>
@@ -96,5 +93,6 @@
             <p>&copy; 2024 Tienda de articulos para D&D. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="../scripts/scripts.js"></script>
 </body>
 </html>

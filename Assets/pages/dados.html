@@ -34,7 +34,7 @@
                     <a class="nav-link" href="ayuda.html">Contactanos</a>
                 </li>
                 <div v-if="isLoggedIn">
-                    <button class="buttonSession">
+                    <button id="sessionButton" class="buttonSession">
                         <a href="ingresar.html" @click.prevent="logout" class="logIn">REGISTRARSE</a>
                     </button>
                 </div>
@@ -102,4 +102,5 @@
         </div>
     </footer>
 </body>
+<script src="../scripts/scripts.js"></script>
 </html>

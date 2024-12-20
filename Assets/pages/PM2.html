@@ -33,7 +33,7 @@
                     <a class="nav-link" href="ayuda.html">Contactanos</a>
                 </li>
                 <div v-if="isLoggedIn">
-                    <button class="buttonSession">
+                    <button id="sessionButton" class="buttonSession">
                         <a href="ingresar.html" @click.prevent="logout" class="logIn">REGISTRARSE</a>
                     </button>
                 </div>
@@ -48,6 +48,12 @@
                 <div class="card-category category-PM2S" data-aos="flip-up" data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">
                     <a href="#"><span>$20.000</span></a>
+                    <button id="addToCart" 
+                    data-id="1" 
+                    data-name="Combo de Fichas y Pantalla" 
+                    data-price="12000">
+                Agregar al carrito
+            </button>
                 </div>
             </div>
         </section>
@@ -82,4 +88,6 @@
             <p>&copy; 2024 Tienda de articulos para D&D. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="../scripts/scripts.js"></script>
 </body>
+</html>

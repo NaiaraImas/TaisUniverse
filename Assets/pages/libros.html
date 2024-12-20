@@ -34,7 +34,7 @@
                     <a class="nav-link" href="ayuda.html">Contactanos</a>
                 </li>
                 <div v-if="isLoggedIn">
-                    <button class="buttonSession">
+                    <button id="sessionButton" class="buttonSession">
                         <a href="ingresar.html" @click.prevent="logout" class="logIn">REGISTRARSE</a>
                     </button>
                 </div>
@@ -101,5 +101,6 @@
             <p>&copy; 2024 Tienda de articulos para D&D. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="../scripts/scripts.js"></script>
 </body>
 </html>

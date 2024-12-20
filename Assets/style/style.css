@@ -582,6 +582,17 @@ body {
     width: 25rem;
   }
 
+  .category-Carrito{
+    background-image: linear-gradient(#00000080, #00000080);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform .5s ease;
+    height: 17.5rem;
+    width: 37rem;
+  }
+
   .footer {
     background-color: black;
     color: white;
@@ -1147,3 +1158,97 @@ label span {
   }
 }
 
+/* Carrito */
+
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+.cart-item {
+  background-color: linear-gradient(#00000080, #00000080);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.cart-item:hover {
+  background-color: linear-gradient(#00000080, #00000080);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cart-item img {
+  background-color: linear-gradient(#00000080, #00000080);
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart-item h3 {
+  background-color: linear-gradient(#00000080, #00000080);
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.cart-item p {
+  background-color: linear-gradient(#00000080, #00000080);
+  font-size: 1rem;
+  color: #555;
+}
+
+.cart-item .price {
+  background-color: linear-gradient(#00000080, #00000080);
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #c2c7ca;
+}
+
+.cart-item .remove {
+  display: inline-block;
+  background-color: linear-gradient(#00000080, #00000080);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item .remove:hover {
+  background-color: linear-gradient(#00000080, #00000080);
+}
+
+/* Estilo para el total */
+.cart-total {
+  background-color: linear-gradient(#00000080, #00000080);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b0b5b8;
+}
+
+button#clearCart {
+  background-color: linear-gradient(#00000080, #00000080);
+  color: #5e5f5f;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#clearCart:hover {
+  background-color:linear-gradient(#00000080, #00000080);
+}
