@@ -1160,7 +1160,6 @@ label span {
 
 /* Carrito */
 
-
 .cart-items {
   list-style: none;
   padding: 0;
@@ -1235,20 +1234,6 @@ label span {
   background-color: linear-gradient(#00000080, #00000080);
   font-size: 1.5rem;
   font-weight: bold;
-  color: #b0b5b8;
+  color: #000000;
 }
 
-button#clearCart {
-  background-color: linear-gradient(#00000080, #00000080);
-  color: #5e5f5f;
-  padding: 12px 20px;
-  border-radius: 5px;
-  border: none;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button#clearCart:hover {
-  background-color:linear-gradient(#00000080, #00000080);
-}

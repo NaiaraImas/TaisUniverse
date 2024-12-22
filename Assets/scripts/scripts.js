@@ -134,27 +134,31 @@ document.addEventListener('DOMContentLoaded', function () {
 // Carrito 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const addToCartButton = document.getElementById('addToCart');
+    // Selecciona todos los botones "Añadir al carrito"
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
 
-    if (addToCartButton) {
-        addToCartButton.addEventListener('click', function () {
+    // Asociar eventos de clic a todos los botones
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function () {
             const productId = this.getAttribute('data-id');
             const productName = this.getAttribute('data-name');
             const productPrice = parseFloat(this.getAttribute('data-price'));
 
+            // Añadir el producto al carrito
             addToCart({ id: productId, name: productName, price: productPrice });
         });
-    }
+    });
 
+    // Función para añadir un producto al carrito
     function addToCart(product) {
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
         const existingProduct = cart.find(item => item.id === product.id);
 
         if (existingProduct) {
-            existingProduct.quantity += 1;
+            existingProduct.quantity += 1; // Incrementa la cantidad si ya existe
         } else {
-            cart.push({ ...product, quantity: 1 });
+            cart.push({ ...product, quantity: 1 }); // Añade un nuevo producto
         }
 
         localStorage.setItem('cart', JSON.stringify(cart));
@@ -162,12 +166,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
 document.addEventListener('DOMContentLoaded', function () {
     const cartItemsContainer = document.querySelector('.cart-items');
     const cartTotalElement = document.querySelector('.cart-total');
     const clearCartButton = document.getElementById('clearCart');
 
+    // Renderizar el carrito en la página
     function renderCart() {
         const cart = JSON.parse(localStorage.getItem('cart')) || [];
         cartItemsContainer.innerHTML = '';
@@ -183,6 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
             `;
             cartItemsContainer.appendChild(cartItem);
 
+            // Asociar evento de clic para eliminar
             cartItem.querySelector('.remove-item').addEventListener('click', function () {
                 removeFromCart(item.id);
             });
@@ -191,6 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
         cartTotalElement.textContent = total.toFixed(2);
     }
 
+    // Función para eliminar un producto del carrito
     function removeFromCart(productId) {
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
         cart = cart.filter(item => item.id !== productId);
@@ -198,10 +204,71 @@ document.addEventListener('DOMContentLoaded', function () {
         renderCart();
     }
 
+    // Vaciar el carrito
     clearCartButton.addEventListener('click', function () {
         localStorage.removeItem('cart');
         renderCart();
     });
 
+    // Renderizar el carrito al cargar la página
     renderCart();
 });
+
+
+// Redirige a la página de pago
+document.getElementById('finalizarcompra').addEventListener('click', function () {
+    window.location.href = 'pago.html';
+});
+
+// Página de pago
+
+document.getElementById('paymentForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Evita el envío del formulario
+  
+    let isValid = true;
+  
+    // Limpiar mensajes de error previos
+    document.querySelectorAll('.error').forEach(el => el.textContent = '');
+  
+    // Validar nombre
+    const name = document.getElementById('name').value.trim();
+    if (name.length < 3) {
+      isValid = false;
+      document.getElementById('nameError').textContent = 'El nombre debe tener al menos 3 caracteres.';
+    }
+  
+    // Validar correo
+    const email = document.getElementById('email').value.trim();
+    if (!/\S+@\S+\.\S+/.test(email)) {
+      isValid = false;
+      document.getElementById('emailError').textContent = 'Ingresa un correo válido.';
+    }
+  
+    // Validar número de tarjeta
+    const cardNumber = document.getElementById('cardNumber').value.trim();
+    if (!/^\d{16}$/.test(cardNumber)) {
+      isValid = false;
+      document.getElementById('cardNumberError').textContent = 'El número de tarjeta debe tener 16 dígitos.';
+    }
+  
+    // Validar fecha de expiración
+    const expiration = document.getElementById('expiration').value.trim();
+    if (!/^(0[1-9]|1[0-2])\/\d{2}$/.test(expiration)) {
+      isValid = false;
+      document.getElementById('expirationError').textContent = 'Ingresa una fecha válida (MM/AA).';
+    }
+  
+    // Validar CVV
+    const cvv = document.getElementById('cvv').value.trim();
+    if (!/^\d{3}$/.test(cvv)) {
+      isValid = false;
+      document.getElementById('cvvError').textContent = 'El CVV debe tener 3 dígitos.';
+    }
+  
+    // Mostrar mensaje de éxito si todo es válido
+    if (isValid) {
+      document.getElementById('successMessage').style.display = 'block';
+      document.getElementById('paymentForm').style.display = 'none';
+    }
+  });
+
