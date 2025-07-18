@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Traer productos desde el backend
-  fetch('http://localhost:3000/api/products')
+ fetch('https://api-productos-dnd-production.up.railway.app/api/products')
     .then(res => res.json())
     .then(data => {
       if (!Array.isArray(data)) {
